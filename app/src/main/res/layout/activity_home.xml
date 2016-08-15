@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<Button 
+    android:id="@+id/btn_img_marker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="自定义设置Marker为网络图片"
+    />
+<Button 
+    android:id="@+id/btn_marker_fixed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Marker固定移动地图"
+    />
+<Button 
+    android:id="@+id/btn_point_aggregation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="多点聚合"
+    />
+</LinearLayout>

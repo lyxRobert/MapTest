@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:background="#BBBBBBBB"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_transit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:scaleType="fitCenter"
+                android:background="#FFFFFF"
+                android:padding="2dp"
+                android:src="@drawable/bus" />
+
+            <ImageView
+                android:id="@+id/img_driving"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:padding="2dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/car" />
+
+            <ImageView
+                android:id="@+id/img_walk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:padding="2dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/man" />
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/route_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

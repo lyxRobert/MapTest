@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map_marker_fixed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center" />
+        <ImageView
+            android:id="@+id/myLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/btn_location" />
+    </FrameLayout>
+
+</RelativeLayout>
